@@ -6,6 +6,9 @@ print("\n==== Task 1. =====\n\n")
 
 class Animal:
 
+  animail_type = None
+  voice = None
+
   def __init__(self, name, weight):
     self.name = name
     self.weight = weight
@@ -100,6 +103,8 @@ farm.extend([goose_gray, goose_white, masha,
              sheep_barash, sheep_kudr,
              chicken_koko, chicken_ku,
              goat_roga, goat_kopita, duck_co])
+for animal in farm:
+	animal.check_voice()
 
 # Task 1.2
 print("\n==== Task 1.2 =====\n\n")
@@ -120,6 +125,15 @@ class Track:
     self._name = name
     self._dur = int(dur)
 
+  def __str__(self):
+  	return f"<{self._name} - {self._dur}>" 
+
+  def __ge__(self, other):
+  	return self.get_dur() >= other.get_dur()
+
+  def __gt__(self, other):
+  	return self.get_dur() > other.get_dur()
+
   def show(self):
     print(f"<{self._name} - {self._dur}>")
 
@@ -133,6 +147,12 @@ class Album():
     self._name = name
     self._group = group
     self._tracklist = []
+
+  def __str__(self):
+  	tracks = "\n".join(["\t" + str(track) for track in self._tracklist])
+  	return f"Name group: {self._group}\n" \
+  		   f"Name album: {self._name}\n" \
+  		   f"Tracks:\n{tracks}"
 
   def get_tracks(self):
     """
@@ -170,6 +190,7 @@ tracks = [Track("Нас не догонят", 1),
 my_album = Album("Избранное", "всяко-разно")
 for track in tracks:
   my_album.add_track(track)
-my_album.get_tracks()
+print(my_album)
+print(tracks[0] >= tracks[1])
 
 print(my_album.get_duration())
