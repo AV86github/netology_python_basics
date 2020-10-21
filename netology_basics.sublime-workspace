@@ -1,0 +1,695 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"get_hero_info\tfunction"
+			],
+			[
+				"re",
+				"resp\tstatement"
+			],
+			[
+				"hero",
+				"hero_name\tparam"
+			],
+			[
+				"file",
+				"files_dict\tstatement"
+			],
+			[
+				"li",
+				"listdir\tfunction"
+			],
+			[
+				"ing",
+				"ing_data\tstatement"
+			],
+			[
+				"set",
+				"setdefault\tfunction"
+			],
+			[
+				"rec",
+				"rec_array"
+			],
+			[
+				"recs",
+				"recs_arr\tstatement"
+			],
+			[
+				"pa",
+				"path\tmodule"
+			],
+			[
+				"is",
+				"isfile\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "HW10/SuperHero.py",
+			"settings":
+			{
+				"buffer_size": 375,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "HW10/params.py",
+			"settings":
+			{
+				"buffer_size": 75,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Python 3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> import os\n>>> os.getcwd()\n'/snap/sublime-text/85/opt/sublime_text'\n>>> ",
+			"settings":
+			{
+				"buffer_size": 862,
+				"line_ending": "Unix",
+				"name": "*REPL* [python]",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gitsa",
+				"GitSavvy: help"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: For Loop"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"mathe",
+				"Material Theme: Activate theme"
+			],
+			[
+				"Install Package Control",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 264.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands (True)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/antonv/Courses/python-netology/netology_python_basics",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10"
+	],
+	"file_history":
+	[
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/params.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/__init__.py",
+		"/home/antonv/.config/sublime-text-3/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
+		"/home/antonv/Courses/python-netology/netology_python_basics/netology_basics.sublime-project",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW9/main.py",
+		"/home/antonv/.config/sublime-text-3/Packages/DocBlockr_Python/DocblockrPython.sublime-settings",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/main.py",
+		"/home/antonv/.config/sublime-text-3/Packages/AutoPEP8/Default.sublime-keymap",
+		"/home/antonv/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/antonv/Coding/Sublime_BU/test.py",
+		"/home/antonv/.config/sublime-text-3/Packages/User/commands.txt",
+		"/home/antonv/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/User/Snippet/print.sublime-snippet",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/recs.txt",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/main.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/Task2/main.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/Task2/3.txt",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/Task2/2.txt",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/Task2/1.txt",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW8/test.py",
+		"/home/antonv/.config/sublime-text-3/Packages/User/sublime_jedi.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/home/antonv/.config/sublime-text-3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/User/python3.sublime-build",
+		"/home/antonv/.config/sublime-text-3/Packages/User/Default.sublime-keymap"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "HW10/SuperHero.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										271,
+										272
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										267,
+										268
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "/home/antonv/Courses/python-netology/netology_python_basics",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "HW10/params.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.repo_path": "/home/antonv/Courses/python-netology/netology_python_basics",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								862
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/home/antonv/Courses/python-netology/netology_python_basics/HW10",
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "89b7ad8858724475b943c3fd1ca77720",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"/usr/bin/python3",
+									"-i",
+									"-u"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"extend_env":
+								{
+									"PYTHONIOENCODING": "utf-8"
+								},
+								"external_id": "python",
+								"syntax": "Packages/Python/Python.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 375.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.714933057763,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 162.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/python3.sublime-build",
+	"project": "netology_basics.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 280.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

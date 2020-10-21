@@ -1,0 +1,2 @@
+GET https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&site=stackoverflow
+Accept: application/json
