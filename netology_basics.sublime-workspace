@@ -5,19 +5,47 @@
 		[
 			[
 				"get",
-				"get_hero_info\tfunction"
+				"getcwd\tfunction"
+			],
+			[
+				"VK",
+				"VK_API\tstatement"
+			],
+			[
+				"user",
+				"user_id\tparam"
+			],
+			[
+				"url",
+				"urljoin\tfunction"
+			],
+			[
+				"stat",
+				"status_code"
 			],
 			[
 				"re",
-				"resp\tstatement"
-			],
-			[
-				"hero",
-				"hero_name\tparam"
+				"response\tstatement"
 			],
 			[
 				"file",
-				"files_dict\tstatement"
+				"file_path\tparam"
+			],
+			[
+				"q",
+				"quote_plus\tfunction"
+			],
+			[
+				"hero",
+				"hero_dict\tparam"
+			],
+			[
+				"her",
+				"hero_data\tstatement"
+			],
+			[
+				"he",
+				"hero_list"
 			],
 			[
 				"li",
@@ -52,31 +80,30 @@
 	"buffers":
 	[
 		{
-			"file": "HW10/SuperHero.py",
+			"file": "HW11/params.py",
 			"settings":
 			{
-				"buffer_size": 375,
+				"buffer_size": 96,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "HW10/params.py",
+			"file": "HW11/main.py",
 			"settings":
 			{
-				"buffer_size": 75,
+				"buffer_size": 1012,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Python 3.8.5 (default, Jul 28 2020, 12:59:40) \n[GCC 9.3.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'params'\n>>> import os\n>>> os.getcwd()\n'/snap/sublime-text/85/opt/sublime_text'\n>>> ",
+			"file": "HW11/task.txt",
 			"settings":
 			{
-				"buffer_size": 862,
-				"line_ending": "Unix",
-				"name": "*REPL* [python]",
-				"scratch": true
+				"buffer_size": 796,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -92,12 +119,12 @@
 		"selected_items":
 		[
 			[
-				"gitsa",
-				"GitSavvy: help"
-			],
-			[
 				"in",
 				"Package Control: Install Package"
+			],
+			[
+				"gitsa",
+				"GitSavvy: help"
 			],
 			[
 				"insta",
@@ -161,11 +188,28 @@
 	"expanded_folders":
 	[
 		"/home/antonv/Courses/python-netology/netology_python_basics",
-		"/home/antonv/Courses/python-netology/netology_python_basics/HW10"
+		"/home/antonv/Courses/python-netology/netology_python_basics/diploma",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW11"
 	],
 	"file_history":
 	[
+		"/home/antonv/.config/sublime-text-3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW11/task.txt",
+		"/home/antonv/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/home/antonv/.config/sublime-text-3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/home/antonv/.config/sublime-text-3/Packages/MarkdownEditing/README.md",
+		"/home/antonv/.config/sublime-text-3/Packages/User/MultiMarkdown.sublime-settings",
+		"/home/antonv/Courses/python-netology/netology_python_basics/diploma/task.txt",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/SuperHero.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/Yandex.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW11/main.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/StackOverflow.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/http",
 		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/params.py",
+		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/test.file",
+		"/home/antonv/Courses/python-netology/netology_python_basics/.gitignore",
 		"/home/antonv/Courses/python-netology/netology_python_basics/HW10/__init__.py",
 		"/home/antonv/.config/sublime-text-3/Packages/AdvancedNewFile/Default (Linux).sublime-keymap",
 		"/home/antonv/Courses/python-netology/netology_python_basics/netology_basics.sublime-project",
@@ -207,6 +251,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"txt",
+			"'\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -224,28 +270,29 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "HW10/SuperHero.py",
+					"file": "HW11/params.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 375,
+						"buffer_size": 96,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								272,
-								272
+								95,
+								95
 							]
 						],
 						"settings":
 						{
+							"_anf_new": "",
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -253,24 +300,24 @@
 								{
 									"1":
 									[
-										271,
-										272
+										94,
+										95
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										267,
-										268
+										8,
+										9
 									]
 								},
 								"unmatched":
@@ -279,36 +326,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -319,21 +341,46 @@
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
 							],
 							"git_savvy.repo_path": "/home/antonv/Courses/python-netology/netology_python_basics",
 							"syntax": "Packages/Python/Python.sublime-syntax"
@@ -347,11 +394,114 @@
 				},
 				{
 					"buffer": 1,
-					"file": "HW10/params.py",
+					"file": "HW11/main.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 1012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								209,
+								209
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"git_savvy.repo_path": "/home/antonv/Courses/python-netology/netology_python_basics",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "HW11/task.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 796,
 						"regions":
 						{
 						},
@@ -365,81 +515,8 @@
 						"settings":
 						{
 							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
 							"git_savvy.repo_path": "/home/antonv/Courses/python-netology/netology_python_basics",
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -451,143 +528,8 @@
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 862,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								862,
-								862
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"default_dir": "/home/antonv/Courses/python-netology/netology_python_basics/HW10",
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "89b7ad8858724475b943c3fd1ca77720",
-							"repl_restart_args":
-							{
-								"cmd":
-								[
-									"/usr/bin/python3",
-									"-i",
-									"-u"
-								],
-								"cwd": "$file_path",
-								"encoding": "utf8",
-								"extend_env":
-								{
-									"PYTHONIOENCODING": "utf-8"
-								},
-								"external_id": "python",
-								"syntax": "Packages/Python/Python.tmLanguage",
-								"type": "subprocess"
-							},
-							"repl_sublime2": false,
-							"smart_indent": false,
-							"spell_check": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 375.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -624,7 +566,7 @@
 		"rows":
 		[
 			0.0,
-			0.714933057763,
+			0.884259259259,
 			1.0
 		]
 	},
@@ -635,7 +577,7 @@
 	},
 	"output.exec":
 	{
-		"height": 162.0
+		"height": 218.0
 	},
 	"output.find_results":
 	{
@@ -679,7 +621,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
