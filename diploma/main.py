@@ -1,9 +1,11 @@
 import os
-from pprint import pprint
 from params import *
 import requests
 from datetime import datetime
 from urllib.parse import urljoin
+import json
+import shutil
+from tqdm import tqdm
 
 
 class App():
@@ -12,6 +14,8 @@ class App():
     """
 
     DBG = True
+    PHOTO_FOLDER = "VK_Photos"
+    PHOTO_COUNT = 3
 
     def __init__(self):
         self.log("Start")
@@ -26,8 +30,70 @@ class App():
     def run(self):
         self.log("Create backup folder")
         self._ya.create_folder(VK_FOLDER)
+        self.create_photos_folder()
+        photos = self._vk.get_photos()
+        photos = self.process_vk_photos(photos)
+        print(photos)
+        # Download files to folder
+        photo_folder = os.path.join(os.getcwd(), self.PHOTO_FOLDER)
+        res = []
+        for photo in photos:
+            # generate file name
+            photo_path = os.path.join(photo_folder, photo["likes"])
+            counter = 0
+            while os.path.isfile(photo_path + ".jpg"):
+                counter += 1
+                photo_path += "_" + str(counter)
+            # Add photo info to JSON
+            res.append({
+                "file_name": os.path.basename(photo_path) + ".jpg",
+                "size": photo["photo"]["type"]
+            })
+            # download photo
+            with open(photo_path + ".jpg", "wb") as f:
+                resp = requests.get(photo["photo"]["url"], stream=True)
+                # print(f"donwload {photo['photo']['url']}. Status: {resp.status_code}")
+                f.write(resp.content)
+        # upload files to yandex
+        for cur_file in tqdm(os.listdir(photo_folder)):
+            print(f"uploading file {cur_file} to yandex")
+            self._ya.upload(file_path=os.path.join(photo_folder, cur_file),
+                            dest_folder=VK_FOLDER)
+        self.log("Upload JSON to yandex")
+        # upload json result
+        with open("res.json", "w") as f:
+            json.dump(res, f)
+        self._ya.upload(file_path="res.json", dest_folder=VK_FOLDER)
 
         self.log("Done")
+
+    def process_vk_photos(self, photos):
+        """Processing raw reaponse from vk
+        Get largest url, generate file name
+        Arguments:
+            photos {[type]} -- [description]
+        """
+        self.log("Start photo processing.")
+        result = []
+        for photo in photos:
+            max_photo = sorted(photo["sizes"], reverse=True,
+                               key=lambda x: x["height"])[0]
+            result.append({
+                "id": photo["id"],
+                "likes": str(photo["likes"]["count"] if "likes" in photo.keys() else None),
+                "photo": max_photo
+            })
+        return result
+
+    def create_photos_folder(self):
+        # Remove old folder if exists
+        folder_path = os.path.join(os.getcwd(), self.PHOTO_FOLDER)
+        if os.path.isdir(folder_path):
+            self.log(f"Remove existing folder: {folder_path}")
+            shutil.rmtree(folder_path)
+            # os.removedirs(folder_path)
+        self.log(f"Create folder: {folder_path}")
+        os.mkdir(folder_path)
 
 
 class YaDiskAPI():
@@ -75,7 +141,7 @@ class YaDiskAPI():
         if status.status_code == 409:
             self.log(f"Folder {folder_path} allready exists")
         else:
-            self.log("Done. Status:", status.status_code)
+            self.log("Done. Status:" + str(status.status_code))
 
     def _get_folder_list(self, root_path):
         params = {
@@ -148,19 +214,40 @@ class VKAPI():
         if not user_id:
             user_id = self._token_owner_id
         method = "friends.get"
-        cust_params = self._params.copy()
-        cust_params.update({
+        friends = self._send_request(method, {
             "user_id": user_id
-        })
-        friends = self._send_request(method, cust_params)["response"]["items"]
-        self.log("get_friends method return: ", friends)
+        })["response"]["items"]
+        self.log("get_friends method return: " + str(friends))
         return friends
 
-    def get_user_info(self, user_id=None):
-        """return info about account
+    def get_photos(self, user_id=None):
+        """reutrn user photos
         
         [description]
         
+        Arguments:
+            user_id {[type]} -- [description]
+        """
+        self.log("Start get_photos method")
+        if user_id is None:
+            user_id = self._token_owner_id
+        method = "photos.get"
+        photo_params = {
+            "owner_id": self._token_owner_id,
+            "extended": 1,
+            "album_id": "profile"
+        }
+        if self._dbg:
+            self.log("mock photo pesponse")
+            with open("resultd.json", "r") as f:
+                photos = json.load(f)
+        else:
+            photos = self._send_request(method, photo_params)
+        # self.log("get_photos done: " + str(photos))
+        return photos["response"]["items"] if photos["response"]["count"] > 0 else None
+
+    def get_user_info(self, user_id=None):
+        """return info about account
         Keyword Arguments:
             user_id {[str]} -- [description] (default: {None})
         """
@@ -168,11 +255,9 @@ class VKAPI():
         if not user_id:
             user_id = self._token_owner_id
         method = "users.get"
-        cust_params = self._params.copy()
-        cust_params.update({
+        info = self._send_request(method, {
             "user_ids": user_id
-        })
-        info = self._send_request(method, cust_params)["response"][0]
+        })["response"][0]
         self.log("get_user_info method return: ", info)
         return info
 
@@ -188,19 +273,22 @@ class VKAPI():
             [str] -- [user id]
         """
         method = "users.get"
-        return self._send_request(method, self._params)["response"][0]["id"]
+        return self._send_request(method)["response"][0]["id"]
 
-    def _send_request(self, method, params):
+    def _send_request(self, method, params=None):
         self.log(f"Invoke method: {method}")
+        cust_params = self._params.copy()
+        if params is not None:
+            cust_params.update(params)
         if self._token is None:
             print("Offline.")
             return {
                 "response": ["Dummy"]
             }
-        self.log(f"{method} params: " + str(params))
+        self.log(f"{method} params: " + str(cust_params))
         url = urljoin(self.VK_API, method)
         response = requests.get(url,
-                                params=params,
+                                params=cust_params,
                                 timeout=(10, 10))
         self.log("Response: " + str(response.json()))
         return response.json()

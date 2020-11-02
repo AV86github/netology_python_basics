@@ -1,0 +1,7 @@
+VK_TOKENT = "VK_TOKENT"
+
+YA_TOKEN = "YA_TOKEN"
+
+ROOT_YA_FOLDER = "netology"
+
+VK_FOLDER = "VK_BACKUP"
